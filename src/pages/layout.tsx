@@ -24,7 +24,7 @@ export default function RootLayout({
             <nav className="border-b border-gray-700 bg-gray-800 bg-opacity-50 backdrop-blur-sm p-4 sticky top-0 z-10">
               <div className="container mx-auto flex justify-between items-center">
                 <Link href="/" className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors">
-                  Chess Clone
+                  Chess ADOS
                 </Link>
                 <div className="space-x-4">
                   <Link href="/" className="text-primary hover:text-primary/80 transition-colors">
