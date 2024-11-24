@@ -8,6 +8,7 @@ import AppContext from './contexts/Context'
 import Control from './components/Control/Control.jsx';
 import TakeBack from './components/Control/bits/TakeBack.jsx';
 import MovesList from './components/Control/bits/MovesList.jsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
 
