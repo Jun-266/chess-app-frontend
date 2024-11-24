@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
 
-    const [appState, dispatch ] = useReducer(reducer,initGameState);
+    const [appState, dispatch] = useReducer(reducer, initGameState);
 
     const providerState = {
         appState,
@@ -22,12 +22,15 @@ function App() {
     return (
         <AppContext.Provider value={providerState} >
             <div className="App">
-                <Board/>
+                <Board />
                 <Control>
-                    <MovesList/>
-                    <TakeBack/>
+                    <MovesList />
+                    <TakeBack />
                 </Control>
             </div>
+            
+
+
         </AppContext.Provider>
     );
 }
