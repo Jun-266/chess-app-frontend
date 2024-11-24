@@ -1,3 +1,4 @@
+import React from 'react';
 import './Board.css'
 import { useAppContext }from '../../contexts/Context'
 

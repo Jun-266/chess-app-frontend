@@ -1,3 +1,4 @@
+import React from 'react';
 import './Ranks.css'
 
 const Ranks = ({ranks}) => 

@@ -1,4 +1,5 @@
 import './Pieces.css'
+import React from 'react';
 import Piece from './Piece.jsx'
 import { useRef  } from 'react'
 import { useAppContext }from '../../contexts/Context'

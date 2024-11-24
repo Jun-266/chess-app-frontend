@@ -1,3 +1,4 @@
+import React from 'react';
 import { useAppContext }from '../../../contexts/Context'
 import './MovesList.css'
 

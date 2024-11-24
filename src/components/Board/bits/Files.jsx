@@ -1,3 +1,4 @@
+import React from 'react';
 import './Files.css'
 import {getCharacter} from '../../../helper'
 
