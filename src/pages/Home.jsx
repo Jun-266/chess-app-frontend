@@ -34,9 +34,9 @@ function Home(){
             <button style={styles.button} onClick={redirigirALogin}>Log In</button>
             <button style={styles.button} onClick={redirigirARegister}>Register</button>
 
-            <button style={styles.button} onClick={handleHolaMundoCLick}>home</button>
+            {/* <button style={styles.button} onClick={handleHolaMundoCLick}>test1</button>
 
-            <button style={styles.button} onClick={handleHolaMundoCLick2}>home</button>
+            <button style={styles.button} onClick={handleHolaMundoCLick2}>test2</button> */}
 
             {/* <button style={styles.button} onClick={handleHolaMundoCLick}>holaMundo</button> */}
             </div>
