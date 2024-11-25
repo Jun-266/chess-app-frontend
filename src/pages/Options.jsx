@@ -46,7 +46,7 @@ export default function Options() {
       const decodedData = jwtDecode(tokenStorage);
       // const now = Date.now();
       // const notExpired = decodedData.exp * 1000 > now;
-      // console.log("\n DecodeData : ",decodedData);
+      console.log("\n DecodeData : ",decodedData);
       const newUserName = decodedData.sub;
       setUserName(newUserName);
       const newRoles = decodedData.roles;
@@ -62,7 +62,7 @@ export default function Options() {
     const urlObj = new URL(url);
     const newToken = urlObj.searchParams.get('token');
     setToken(newToken);
-    // console.log("Token extraído:", token);
+    console.log("Token extraído:", token);
     localStorage.setItem('token',newToken);
 
   }
@@ -71,7 +71,7 @@ export default function Options() {
     nav('/test');
   };
   const redirectToAppManagement = (url) => {
-    window.location.href = "http://localhost:8081/"+url;
+    window.location.href = "http://localhost:8081"+url;
   };
   const handleNavigate = (url) =>{
     nav(url);
@@ -101,13 +101,10 @@ export default function Options() {
           Join millions of players from around the world
         </p>
 
-        
-        
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <button
             className="flex-1 bg-blue-900 hover:bg-blue-800 text-white font-semibold py-4 px-8 rounded-lg border border-blue-700 shadow-lg hover:shadow-blue-900/20 transition-all duration-200 transform hover:-translate-y-1"
-            onClick={() => handleNavigate("/onlineGame")}>
+            onClick={() => handleNavigate("/custom-game")}>
             Online Game
           </button>
           
@@ -120,7 +117,7 @@ export default function Options() {
           {
             isAdmin && <button className="flex-1 bg-blue-900 hover:bg-blue-800 text-white font-semibold py-4 px-8 rounded-lg border border-blue-700 shadow-lg hover:shadow-blue-900/20 transition-all duration-200 transform hover:-translate-y-1"
             onClick={() => redirectToAppManagement("/home")}>{
-              <p>List of Users</p>
+              <p>Administration</p>
             }</button>
           }
 
